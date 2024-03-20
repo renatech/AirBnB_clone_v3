@@ -1,4 +1,3 @@
-84% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for ₦950.00 ₦240.00/month for 3 months.
 #!/usr/bin/python3
 """ Console Module """
 import cmd
@@ -17,7 +16,8 @@ class HBNBCommand(cmd.Cmd):
     """ Contains the functionality for the HBNB console"""
 
     # determines prompt for interactive/non-interactive modes
-    prompt = '(hbnb) ' if sys.__stdin__.isatty() else ''
+    prompt = '(hbnb)' if sys.__stdin__.isatty() else ''
+
 
     classes = {
                'BaseModel': BaseModel, 'User': User, 'Place': Place,
