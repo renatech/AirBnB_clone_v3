@@ -82,3 +82,9 @@ class DBStorage:
         """ calls remove()
         """
         self.__session.close()
+
+    def get(self,cls,id):
+        pass
+
+    def count(self):
+        pass
