@@ -10,10 +10,12 @@ classes = {"users": "User", "places": "Place", "states": "State",
            "cities": "City", "amenities": "Amenity",
            "reviews": "Review"}
 
+
 @app_views.route('/status', strict_slashes=False)
 def stat_return():
     """ return json status: OK """
     return jsonify({"status": "OK"})
+
 
 @app_views.route('/stats', methods=['GET'])
 def count():
